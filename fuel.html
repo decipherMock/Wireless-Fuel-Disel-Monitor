@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+ <style>
+    .container{
+    margin-top:100px;
+}
+
+.counter-box {
+	display: block;
+	background: #f6f6f6;
+	padding: 40px 20px 37px;
+	text-align: center;
+    border-radius:10px;
+}
+
+.counter-box p {
+	margin: 5px 0 0;
+	padding: 0;
+	color: #909090;
+	font-size: 18px;
+	font-weight: 500
+}
+
+.counter-box i {
+	font-size: 60px;
+	margin: 0 0 15px;
+	color: #d2d2d2
+}
+
+.fuel_level_id { 
+	display: block;
+	font-size: 32px;
+	font-weight: 700;
+	color: #666;
+	line-height: 28px
+}
+
+.counter-box.colored {
+      background: #3acf87;
+}
+
+.counter-box.colored p,
+.counter-box.colored i,
+.counter-box.colored .counter {
+	color: #fff
+}
+ </style>
+    
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Admin Dashboard Panel</title> 
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="images/logo.png" alt="">
+            </div>
+
+            <span class="logo_name">datasusTech</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="#">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Dahsboard</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-files-landscapes"></i>
+                    <span class="link-name">Tanks</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-chart"></i>
+                    <span class="link-name">Analytics</span>
+                </a></li>
+              
+                <li><a href="#">
+                    <i class="uil uil-cog"></i>
+                    <span class="link-name">Equipments</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-share"></i>
+                    <span class="link-name">Share</span>
+                </a></li>
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="#">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+              
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>   
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-tachometer-fast-alt"></i>
+                    <span class="text">Machine  Fuel/Disesel Level
+                </div>
+               
+                <div class="boxes" style="width: 900px; margin-left: 400px;">
+                  
+                    <div class="container">
+                        <div class="row">
+                
+                        <div class="four col-md-4">
+                            <div class="counter-box colored">
+                                <!--fuel_level_id is the value for the fuel sensor readings converted into %-->
+                                <span class="fuel_level_id">54%</span>
+                                <p>Machince One</p>
+                            </div>
+                        </div>
+                        <div class="four col-md-4">
+                            <div class="counter-box">
+                              <!--fuel_level_id is the value for the fuel sensor readings converted into %-->
+                                <span  class="fuel_level_id">92%</span>
+                                <p>Machince 2</p>
+                            </div>
+                        </div>
+                        <div class="four col-md-4">
+                            <div class="counter-box">
+                             <!--fuel_level_id is the value for the fuel sensor readings converted into %-->
+                                <span class="fuel_level_id">41%</span>
+                                <p>Machince 3</p>
+                            </div>
+                        </div>
+                      
+                      </div>	
+                    </div>
+                    
+
+                </div>
+            </div>
+
+        
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+
+
+</body>
+</html>

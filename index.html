@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Admin Dashboard Panel</title> 
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="images/logo.png" alt="">
+            </div>
+
+            <span class="logo_name">datasusTech</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="#">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Dahsboard</span>
+                </a></li>
+                <li><a href="fuel.html">
+                    <i class="uil uil-tachometer-fast-alt"></i>
+                    <span class="link-name">Tanks</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-chart"></i>
+                    <span class="link-name">Analytics</span>
+                </a></li>
+              
+                <li><a href="#">
+                    <i class="uil uil-cog"></i>
+                    <span class="link-name">Equipments</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-share"></i>
+                    <span class="link-name">Share</span>
+                </a></li>
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="#">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+              
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+           
+            
+            <img src="images/profile.jpg" alt="">
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-tachometer-fast-alt"></i>
+                    <span class="text">Dashboard <span style="position:absolute;right:20px"><button style="height:50px ; background-color:rgb(48, 114, 150); border-radius: 10px;text-align: center;width: 160px;color: white;">Add Equipment</button></span>
+                </div>
+
+                <div class="boxes">
+                    <div class="box box1">
+                        <i class="uil uil-cog"></i>
+                        <span class="text">Total Machines</span>
+                        <span class="number">50</span>
+                    </div>
+                    <div class="box box2">
+                        <i class="uil uil-check"></i>
+                        <span class="text">competed servicing</span>
+                        <span class="number">20</span>
+                    </div>
+                    <div class="box box3">
+                        <i class="uil uil-share"></i>
+                        <span class="text">pending servicing</span>
+                        <span class="number">30</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity">
+                <div class="title">
+                    <i class="uil uil-clock-three"></i>
+                    <span class="text">Equipments Maintenance Report</span>
+                </div>
+
+                <div class="activity-data">
+                    <div class="data names" >
+                        <span class="data-title" >Machine</span>
+                        <span class="data-list">Machine 10.2</span>
+                        <span class="data-list">Machine 2354.2</span>
+                    </div>
+                    <div class="data email">
+                        <span class="data-title">Code Number</span>
+                        <span class="data-list">MH364537</span>
+                        <span class="data-list">MH374537</span>
+                        
+                    </div>
+                    <div class="data joined">
+                        <span class="data-title">Department</span>
+                        <span class="data-list">Processing</span>
+                        <span class="data-list">Packaging</span>
+                       
+                    </div>
+                    <div class="data type">
+                        <span class="data-title">Service date</span>
+                        <span class="data-list">2022-02-12</span>
+                        <span class="data-list">2022-02-21</span>
+                        
+                    </div>
+                    <div class="data status">
+                        <span class="data-title">Service Personal</span>
+                        <span class="data-list">Obeng Seth</span>
+                        <span class="data-list">Ofori Boadi</span>
+                        
+                        
+                    </div>
+                    <div class="data status">
+                        <span class="data-title">Checked By</span>
+                        <span class="data-list">Obeng Seth</span>
+                        <span class="data-list">Ofori Boadi</span>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
